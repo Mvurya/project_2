@@ -7,8 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<?php require_once("includes/db_connect.php"); ?>
-<?php include_once("templates/nav.php"); ?>
+    <?php
+ require_once("includes/db_connect.php"); 
+  include_once("templates/nav.php");
+ if(isset($_POST["send_message"])){
+
+    $fn= mysqli_real_escape_string($conn,$_POST["fullname"]);
+    $em= mysqli_real_escape_string($conn,$_POST["email"]);
+    $sl= mysqli_real_escape_string($conn,$_POST["Subject_Line"]);
+    $msg= mysqli_real_escape_string($conn,$_POST["message"]);
+
+    $insert_message = "INSERT INTO messages (sender_name, sender_email,subject_line, text_message)
+    VALUES ('$fn', '$em', '$sl','$msg')";
+
+    if ($conn->query($insert_message) === TRUE) {
+        header("Location: view_messages.php");
+        exit();
+    } else {
+        echo "Error: " . $insert_message . "<br>" . $conn->error;
+    }
+}
+ ?>
 <div class="banner">
     <h1>CONTACT US</h1>
     </div>
@@ -35,11 +54,11 @@
 
                 <label for="sl">Subject:</label> <br>
                 <select name="Subject_Line" id="sl">
-                <option value="subject line">--Select Subject--</option>
-                    <option value="repairs">Repairs</option>
-                    <option value="foundation">Foundation</option>
-                    <option value="wiring">Wiring</option>
-                    <option value="painting">Painting</option>
+                <option value="">--Select Subject--</option>
+                    <option value="lens correction">lens correction</option>
+                    <option value="Frame fixing">Frame fixing</option>
+                    <option value="lens cleansing">lens cleansing</option>
+                    <option value="eye checkup">eye checkup</option>
                 </select> <br> <br>
 
                 <label for="msg">Message:</label><br>
