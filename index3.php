@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href ="./">Home</a>
-    <a href="index2.html">About</a>
-    <a href="index3.html">contact us</a>
-    <a href="index4.html">Products</a>
-    <a href="index7.html">FAQ</a>
-    <a href="index5.html">Sign up</a>
-    <a href="index6.html">Sign in</a>
+<?php require_once("includes/db_connect.php"); ?>
+<?php include_once("templates/nav.php"); ?>
+<div class="banner">
     <h1>CONTACT US</h1>
+    </div>
+    <div class="content">
     <p>For a spectacles company, the Contact Us page should provide various ways for customers to reach out for inquiries, support, or feedback. <br>
      Here is an example of how the contact information could be structured:</p>
 
@@ -26,6 +24,7 @@
     </ul>
 
     <p>This setup ensures that customers have multiple channels through which they can contact the spectacles company for any assistance they may need.</p>
-
+    </div>
+    <?php include_once("templates/sidebar.php"); ?>
 </body>
 </html>

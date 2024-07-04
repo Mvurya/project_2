@@ -9,14 +9,11 @@
 <body>
     
 </body>
-<a href ="./">Home</a>
-    <a href="index2.html">About</a>
-    <a href="index3.html">contact us</a>
-    <a href="index4.html">Products</a>
-    <a href="index7.html">FAQ</a>
-    <a href="index5.html">Sign up</a>
-    <a href="index6.html">Sign in</a>
+<?php include_once("templates/nav.php"); ?>
+<div class="banner">
 <h1>PRODUCTS</h1>
+</div>
+<div class="content">
 <p>We have a variety of products that range from various designer houses that are fit for every pair of eyes</p>
 <table border="1px" style="border: 1px solid
     #373737; width: 50%; border-collapse: collapse ;">
@@ -50,6 +47,10 @@
         <td>Ksh 500</td>
         <td>Ksh 2000</td>
       </tr>
+      </table>
+      </div>
+      <?php include_once("templates/sidebar.php"); ?>
+
       
         
 </html>

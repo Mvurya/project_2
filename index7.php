@@ -9,14 +9,11 @@
 <body>
     
 </body>
-<a href ="./">Home</a>
-    <a href="index2.html">About</a>
-    <a href="index3.html">contact us</a>
-    <a href="index4.html">Products</a>
-    <a href="index7.html">FAQ</a>
-    <a href="index5.html">Sign up</a>
-    <a href="index6.html">Sign in</a>
+<?php include_once("templates/nav.php"); ?>
+<div class="banner">
 <h1>FAQs</h1>
+</div>
+<div class="content">
 <p>1. What is the best way to clean my spectacles?
 
     To clean your spectacles effectively, follow these steps:
@@ -49,4 +46,6 @@
     
     Yes, we offer prescription lenses for our spectacles. You can provide us with your prescription details, and we will assist you in selecting the appropriate lenses for your needs.
 </p>
+</div>
+<?php include_once("templates/sidebar.php"); ?>
 </html>

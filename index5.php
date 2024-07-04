@@ -9,14 +9,11 @@
 <body>
     
 </body>
-<a href ="./">Home</a>
-    <a href="index2.html">About</a>
-    <a href="index3.html">contact us</a>
-    <a href="index4.html">Products</a>
-    <a href="index7.html">FAQ</a>
-    <a href="index5.html">Sign up</a>
-    <a href="index6.html">Sign in</a>
+<?php include_once("templates/nav.php"); ?>
+<div class="banner">
 <h1>Sign Up</h1>
+</div>
+<div class="content">
 <form action=""method="post">
     <label for="">Fullname:</label><br>
     <input type="text" id="fn"
@@ -28,6 +25,9 @@
     <br><br><input type="submit" name="submit" value="Submit" />
 
     </form>
+    </div>
+    <?php include_once("templates/sidebar.php"); ?>
+
 
 
 </html>

@@ -8,16 +8,7 @@
 
 </head>
 <body>
-  <div class="toplink">
-  <a href ="./">Home</a>
-    <a href="index2.html">About</a>
-    <a href="index3.html">contact us</a>
-    <a href="index4.html">Products</a>
-    <a href="index7.html">FAQ</a>
-    <a href="index5.html">Sign up</a>
-    <a href="index6.html">Sign in</a>
-  </div>
-
+  <?php include_once("templates/nav.php"); ?>
     <div class="banner">
       <h1>ALL SPECS</h1>
     </div>
@@ -90,9 +81,7 @@
       </table>
     </div>
 
-    <div class="sidebar">
-      <p>See the World Clearly with Our Stylish Spectacles! Explore our wide range of high-quality frames and lenses to find the perfect pair that suits your style and vision needs. Visit us today for expert eye care and fashionable eyewear!</p>
-    </div>
+    <?php include_once("templates/sidebar.php"); ?>
 
 </body>
 </html>

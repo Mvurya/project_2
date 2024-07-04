@@ -9,14 +9,11 @@
 <body>
     
 </body>
-<a href ="./">Home</a>
-    <a href="index2.html">About</a>
-    <a href="index3.html">contact us</a>
-    <a href="index4.html">Products</a>
-    <a href="index7.html">FAQ</a>
-    <a href="index5.html">Sign up</a>
-    <a href="index6.html">Sign in</a>
+<?php include_once("templates/nav.php"); ?>
+<div class="banner">
 <h1>Sign in</h1>
+</div>
+<div class="content">
 <form action=""method="post">
     <label for="">Username:</label><br>
     <input type="text" id="fn"
@@ -26,6 +23,9 @@
     <input type="password" id="pwd"
     placeholder="password"><br><br>
     <br><br><input type="submit" name="submit" value="Submit" />
+    </div>
+    <?php include_once("templates/sidebar.php"); ?>
+
 
 
 </html>
