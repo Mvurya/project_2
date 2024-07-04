@@ -24,6 +24,31 @@
     </ul>
 
     <p>This setup ensures that customers have multiple channels through which they can contact the spectacles company for any assistance they may need.</p>
+    <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="contacts_form label">
+                <label for="fn">Fullname:</label><br>
+                <input type="text" id="fn"
+                placeholder="Fullname" name="fullname" required><br><br>
+
+                <label for="em">Email:</label><br>
+                <input type="email" id="em"
+                placeholder="Email" name="email" required><br><br>
+
+                <label for="sl">Subject:</label> <br>
+                <select name="Subject_Line" id="sl">
+                <option value="subject line">--Select Subject--</option>
+                    <option value="repairs">Repairs</option>
+                    <option value="foundation">Foundation</option>
+                    <option value="wiring">Wiring</option>
+                    <option value="painting">Painting</option>
+                </select> <br> <br>
+
+                <label for="msg">Message:</label><br>
+                <textarea id="msg" 
+                placeholder="Enter your message here" name="message" rows="4" cols="50">
+                </textarea><br><br>
+
+                <input type="submit" name="send_message" value="Send Message">
+            </form>
     </div>
     <?php include_once("templates/sidebar.php"); ?>
 </body>
