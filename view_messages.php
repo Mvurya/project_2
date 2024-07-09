@@ -14,7 +14,7 @@ require_once("includes/db_connect.php");
 
 
 if(isset($_GET["DelId"])){
-    $DelId=$_GET["DelId "]; 
+    $DelId=$_GET["DelId"]; 
 
     // sql to delete a record
     $del_mes = "DELETE FROM messages WHERE messageId='$DelId' LIMIT 1";
