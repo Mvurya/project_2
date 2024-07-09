@@ -8,8 +8,7 @@
 
 </head>
 <body>
-  <?php
-  include_once("templates/nav.php"); ?>
+  <?php include_once("templates/nav.php"); ?>
     <div class="banner">
       <h1>ALL SPECS</h1>
     </div>
