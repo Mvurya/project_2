@@ -1,9 +1,9 @@
 <div class="toplink">
   <a href ="./">Home</a>
-    <a href="index2.html">About</a>
-    <a href="index3.html">contact us</a>
-    <a href="index4.html">Products</a>
-    <a href="index7.html">FAQ</a>
-    <a href="index5.html">Sign up</a>
-    <a href="index6.html">Sign in</a>
+    <a href="index2.php">About</a>
+    <a href="index3.php">contact us</a>
+    <a href="index4.php">Products</a>
+    <a href="index7.php">FAQ</a>
+    <a href="index5.php">Sign up</a>
+    <a href="index6.php">Sign in</a>
   </div>
