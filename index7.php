@@ -48,4 +48,8 @@
 </p>
 </div>
 <?php include_once("templates/sidebar.php"); ?>
+
+<div class="footer">
+        copyright CONSTRUCTION CO 2024 &copy; All rights reserved
+    </div>
 </html>
