@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
- require_once("includes/db_connect.php"); 
+  require_once("includes/db_connect.php");
   include_once("templates/nav.php");
  if(isset($_POST["send_message"])){
 

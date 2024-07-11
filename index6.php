@@ -9,6 +9,7 @@
 <body>
     
 </body>
+<?php require_once("includes/db_connect.php"); ?>
 <?php include_once("templates/nav.php"); ?>
 <div class="banner">
 <h1>Sign in</h1>
