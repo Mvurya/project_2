@@ -12,7 +12,7 @@
 <h1>ABOUT</h1>
 </div>
 <div class="content">
-    <p>Established in 2005, All Specs was founded by a team of passionate individuals who shared a common goal<br>
+    <p>Established in 2005, ALL SPECS was founded by a team of passionate individuals who shared a common goal<br>
      – to make eyewear shopping a delightful experience.<br>
       With years of expertise in the optical industry,<br>
        we have curated a collection of spectacles that blend innovation, comfort, and aesthetics seamlessly.</p>
